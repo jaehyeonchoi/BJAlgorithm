@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+	int a, b, c, d, e;
+
+	cin >> a >> b;
+	cin >> c;
+
+	if (b + c > 59) {
+		e = (b + c) % 60;
+		int f = (b + c) / 60;
+		d = (a + f) % 24;
+	}
+	else {
+		e = b + c;
+		d = a;
+	}
+	cout << d << " " << e;
+
+	return 0;
+}
